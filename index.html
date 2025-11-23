@@ -1,199 +1,245 @@
-
 <!doctype html>
-<html lang="es">
-  <head>
-    <title>Curriculum</title>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <style>
-      html{background:rgb(47, 47, 47);font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size:11px;}
-      body{
-        line-height: 1.5;
-        width:550px;background:rgb(239, 239, 239);
-        margin:auto;display:flex;}
-      #izquierda img {
-        width: 70%;
-        display: block;          /* allows margin centering */
-        margin: 0 auto;          /* centers horizontally */
-        margin-bottom: 20px;  /* space below image */
-      }
-        
-      #izquierda{
-        flex:1;background:rgb(239, 239, 239);padding:10px;color:rgb(0, 0, 0);}
-      #izquierda ul {
-        padding-left: 20px;   /* smaller indent than the default 40px */
-        margin: 0;
-      }
-      #izquierda {
-        flex: 1.8;
-        background: rgb(239, 239, 239);
-        padding: 10px;
-        color: rgb(0, 0, 0);
-        border-right: 2px solid #ccc; /* ← vertical line */
+    <title>Curriculum · Oscar Sørensen</title>
 
-      }
-      #izquierda article {
-        border-bottom: 1px solid #999;  /* thin grey line */
-        margin: 10px 0;                 /* space between sections */
-        padding-bottom: 8px;
-      }
-      
-      #izquierda article:last-child { /* selector for last article. Last-child works here because all children are articles */
-        border-bottom: none;            /* remove line after last section */
-      }
-      
-      #izquierda {
-        padding: 10px 20px;             /* ensures line doesn’t touch edges */
-      }
-      
-      
-      
-      
-      #derecha{flex:3.5;padding:20px;}
-      #derecha article{display:flex;align-items:center;gap:30px;}
-      #derecha article img{width:50px;height:50px;}
-      #derecha article *{padding:1px;margin:1px;}
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            background: #111;
+            font-family: "Fira Code", monospace;
+            font-size: 14px;
+            color: #DDD;
+        }
+
+        body {
+            background: #1E1E1E;
+            width: 900px;
+            margin: 40px auto;
+            display: flex;
+            border-radius: 6px;
+            overflow: auto;
+            box-shadow: 0 0 25px rgba(0,0,0,0.8);
+        }
+
+        /* LEFT PANEL */
+        #left {
+            width: 32%;
+            background: #252526;
+            padding: 25px;
+            border-right: 1px solid #333;
+        }
+
+        #left img {
+            width: 140px;
+            border-radius: 6px;
+            display: block;
+            margin: 0 auto 20px auto;
+            border: 1px solid #444;
+        }
+
+        #left h3 {
+            font-size: 15px;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #569CD6; /* VS Code blue */
+            border-bottom: 1px solid #333;
+            padding-bottom: 3px;
+        }
+
+        #left ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0 0 22px 0;
+        }
+
+        #left ul li {
+            margin-bottom: 6px;
+            color: #CCC;
+        }
+
+        /* RIGHT PANEL */
+        #right {
+            width: 68%;
+            padding: 35px;
+        }
+
+        #right h1 {
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 6px;
+            color: #DCDCAA; 
+        }
+
+        #right h2 {
+            color: #C586C0; 
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        #right section {
+            margin-bottom: 35px;
+        }
+
+        #right h3 {
+            color: #569CD6;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 4px;
+        }
+
+        .job {
+            margin-bottom: 23px;
+        }
+
+        .job-title {
+            color: #DCDCAA;
+            font-weight: 400;
+        }
+
+        .job-date {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 6px;
+        }
+
+        .job ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .job li {
+            margin-bottom: 6px;
+        }
     </style>
-  </head>
-  <body>
-    <section id="izquierda">
-      <img src="oscarbillede.png">
-      <article>
-        <h3>Educacion</h3>
-          <ul>
-          <li>CEAC - Grado Superior DAW</li>
-          <li>MSG- Bachillerato - Haslev</li>
-          <li>Midtskolen afd. Bavne - Escuela Primaria</li>
-        </ul>
-        
-      </article>
-      <article>
-        <h3>Competencia</h3>
+
+</head>
+
+
+<body>
+
+    <!-- LEFT -->
+    <section id="left">
+
+        <img src="oscarbillede.png">
+
+        <h3>Education</h3>
         <ul>
-          <li>Marketing digital</li>
-          <li>Negociación</li>
-          <li>Habilidades de comunicación</li>
-          <li>Pensamiento crítico</li>
-          <li>Habilidades de gestión</li>
+            <li>CEAC — Higher Technician in Web App Development</li>
+            <li>Midtsjællands Gymnasium — Upper Secondary</li>
+            <li>Haslev Midtskolen — Primary & Secondary School</li>
         </ul>
-      </article>
-      <article>
-        <h3>Otros datos</h3>
+
+        <h3>Skills</h3>
         <ul>
-          <li>Permiso de conducir B y vehículo propio</li>
-          <li>Trabajo presencial e hibrido</li>
-          <li>Inteligencía artificial</li>
-        
+            <li>Digital marketing</li>
+            <li>Negotiation</li>
+            <li>Communication</li>
+            <li>Critical thinking</li>
+            <li>Team leadership</li>
         </ul>
-      </article>
-      <article>
-        <h3>Idiomas</h3>
+
+        <h3>Additional</h3>
         <ul>
-          <li>Danés - Nativo</li>
-          <li>Inglés - Bilingüe</li>
-          <li>Español - Avanzado</li>
-          <li>Noruego - Nivel medio</li>
+            <li>Driving licence B + vehicle</li>
+            <li>On-site & hybrid availability</li>
+            <li>Experience with AI tools</li>
         </ul>
-      </article>
-      <article>
-        <h3>Contacto</h3>
+
+        <h3>Languages</h3>
         <ul>
-          <li>+34 698xxxxxx</li>
-          <li>oscar081100@gmail.com</li>
-          <li>46009 Valencia, Spain </li>
+            <li>Danish — Native</li>
+            <li>English — C2</li>
+            <li>Spanish — B2</li>
+            <li>Norwegian — B1</li>
         </ul>
-      </article>
+
+        <h3>Contact</h3>
+        <ul>
+            <li>+34 698 xxx xxx</li>
+            <li>oscar081100@gmail.com</li>
+            <li>Valencia, Spain</li>
+        </ul>
 
     </section>
-    <section id="derecha">
-      <h1>Oscar Sjorman Sorensen</h1>
-      <h3>Técnico Superior en Desarrollo de Aplicaciones Web</h3>
-      <p>Candidato entusiasta y de rápido aprendizaje con habilidades analíticas y
-        organizativas. Experiencia en documentación digital, gestión de archivos y
-        mantenimiento web. Motivado para ampliar competencias técnicas
-        mediante formación y proyectos prácticos. Comprometido con una
-        carrera en IT basada en fiabilidad, adaptabilidad y aprendizaje continuo.</p>
-      
-        <div id="experiencia">
-        <h3>Experiencia laboral</h3>
-        <article>
-          
-          <div class="texto">
-            <h3>Mediter Real Estate</h3>
-            <h5>Administración y agente inmobiliario </h5>
-            <h5>2021 / 12 - 2024/6</h5>
-            <li>Responsable de la página web y de todo el marketing
-              online. Facebook, Instagram, diversos portales
-              inmobiliarios. Grababa, editaba y gestionaba el canal de
-              YouTube de la empresa.</li>
-            <li>Primer punto de contacto con los constructores,
-              negociaba precios y proyectos con ellos. Contacto y
-              coordinación con agentes inmobiliarios de otras
-              empresas.</li>
-            <li>Acompañamiento de clientes a visitas de viviendas en el
-              coche de la empresa. Negociación de precios de
-              viviendas y coordinación entre clientes, abogados y otros
-              agentes. Realización de todas las tareas propias de un
-              agente inmobiliario, excepto la redacción de contratos.</li>
-          </div>
-        </article>
-<br>
-        <article>
-          
-          <div class="texto">
-            <h3>ScanSpan</h3>
-            
-            <h5>Técnico auxiliar de informática</h5>
-            <h5>2023/ 1 - 2023/5</h5>
-            <li>Trabajé durante 5 meses en una combinación de tareas
-              sencillas de programación, actualización de wikis internos
-              y mantenimiento de sitios web.</li>
-            <li>Responsable de la organización de archivos y la limpieza
-              digital general, lo que requería un enfoque estructurado y
-              conocimientos de informática. La experiencia proporcionó
-              una sólida visión del trabajo práctico en TI y sentó una
-              buena base para continuar los estudios en informática.</li>
-          </div>
-        </article>
-        <br>
-        <article>
-          
-          <div class="texto">
-            <h3>Experiencia laboral</h3>
-            <h5>Servicio y Operaciones</h5>
-            <h5>2015 – 2021</h5>
-            <h5>(diversos centros, Dinamarca)</h5>
-            <li>Responsable de la seguridad y el buen
-              funcionamiento en piscinas y centros de ocio,
-              incluyendo control de acceso, toma de muestras
-              de agua, registro en logbooks y rutinas de
-              apertura y cierre.</li>
-            <li>Gestión de caja y transacciones diarias, con
-              control y conciliación al inicio y fin de turno.</li>
-            <li>Atención al cliente en entornos de alta exigencia,
-              garantizando calidad de servicio y resolución de
-              incidencias.</li>
-            <li>Coordinación de tareas durante la pandemia, con
-            especial énfasis en limpieza, mantenimiento y
-            protocolos sanitarios.</li>
-            <li>Experiencia en trabajo en equipo, comunicación
-              con clientes y resolución de problemas técnicos y
-              prácticos en el día a día.</li>
-          </div>
-        </article>
-      </div>
-      <div id="Intereses personales">
-        <h3>Intereses personales</h3>
-        <article>
-         
-          <div class="texto">
-           <li>Me interesa mantenerme en buena forma física y
-            suelo acudir al gimnasio con regularidad. También
-            disfruto cocinar y tocar la guitarra. En mi tiempo
-            libre, paso los fines de semana con amigos.</li>
-          </div>
-        </article>
-  
-      </div>
-    </section> 
-  </body> 
+
+
+    <!-- RIGHT -->
+    <section id="right">
+
+        <h1>Oscar Sørensen</h1>
+        <h2>Upcoming Fullstack Developer</h2>
+
+        <section>
+            <h3>Profile</h3>
+            <p>
+                Enthusiastic and fast-learning candidate with strong analytical and organizational skills.
+                Experience in digital documentation, file management, website maintenance, and general IT operations.
+                Motivated to expand technical competencies through training and hands-on projects.
+                Committed to a long-term IT career based on reliability, adaptability, and continuous learning.
+            </p>
+        </section>
+
+        <section>
+            <h3>Work Experience</h3>
+
+            <!-- MEDITER -->
+            <div class="job">
+                <div class="job-title">Mediter Real Estate — Administration & Real Estate Agent</div>
+                <div class="job-date">Dec 2021 – Jun 2024</div>
+                <ul>
+                    <li>Managed company website and all digital marketing platforms (Instagram, Facebook, real estate portals).</li>
+                    <li>Produced, edited, and managed content for the corporate YouTube channel.</li>
+                    <li>Primary point of contact with construction firms: negotiated prices, projects, and timelines.</li>
+                    <li>Coordinated communication between clients, external agents, and legal professionals.</li>
+                    <li>Accompanied clients to property visits, providing operational support and negotiations.</li>
+                    <li>Handled all real estate processes except contract drafting.</li>
+                </ul>
+            </div>
+
+            <!-- SCANSPAN -->
+            <div class="job">
+                <div class="job-title">ScanSpan — Junior IT Assistant</div>
+                <div class="job-date">Jan 2023 – May 2023</div>
+                <ul>
+                    <li>Worked on basic programming tasks and small software automations.</li>
+                    <li>Updated internal wikis, digital documentation, and knowledge systems.</li>
+                    <li>Maintained and updated websites for internal and external use.</li>
+                    <li>Led digital organization projects, file restructuring, and system cleanup.</li>
+                    <li>Gained practical real-world IT experience supporting the technical team.</li>
+                </ul>
+            </div>
+
+            <!-- SERVICE & OPERATIONS -->
+            <div class="job">
+                <div class="job-title">Service & Operations — Various Centers (Denmark)</div>
+                <div class="job-date">2015 – 2021</div>
+                <ul>
+                    <li>Ensured safety, access control, water testing, logbook management, and opening/closing routines as a lifeguard.</li>
+                    <li>Provided customer service, handled cash and transactions, managed reservations, and supported daily operations.</li>
+                    <li>Operated activity stations such as shooting ranges and mechanical bull attractions.</li>
+                    <li>Assisted with technical tasks, event setup, repairs, and general logistics.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section>
+            <h3>Personal Interests</h3>
+            <ul>
+                <li>Fitness and strength training</li>
+                <li>Cooking</li>
+                <li>Playing guitar</li>
+                <li>Weekend activities with friends</li>
+            </ul>
+        </section>
+
+    </section>
+
+</body>
 </html>
